@@ -1,6 +1,7 @@
 const sumAll = function(firstInteger, lastInteger) {
  
   if (firstInteger < 0 || lastInteger < 0) return 'ERROR';
+  if (firstInteger === NaN || lastInteger === NaN) return 'ERROR';
 
   let total = 0;
 

@@ -1,8 +1,8 @@
 const removeFromArray = function(arr, ...toBeRemoved) {
-  let result=[];
+  //let result=[];
   for (let i = 0; i < toBeRemoved.length; i++) {
     for (let j=0;j < arr.length; j++) {
-      if (toBeRemoved[i] !== arr[j]) result.push(arr[j]);
+      if (toBeRemoved[i] === arr[j]) delete arr[j];
     }
   }
 
@@ -19,7 +19,8 @@ const removeFromArray = function(arr, ...toBeRemoved) {
      arr.splice(i,1);
    }*/
   
-  return result;
+  //return result;
+  return arr.filter((el)=>el);
 }
 
 // Do not edit below this line

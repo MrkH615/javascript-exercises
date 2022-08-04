@@ -1,7 +1,7 @@
-const palindromes = function (text) {//doesn't work for single words, punctuation
+const palindromes = function (text) {
   const ltrs = /[a-z]/g;  
-  text = text.toLowerCase().match(ltrs); //array
-  return text.join('') === text.reverse().join('');//string
+  text = text.toLowerCase().match(ltrs); 
+  return text.join('') === text.reverse().join('');
 };
 
 // Do not edit below this line

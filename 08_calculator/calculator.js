@@ -21,9 +21,9 @@ const power = function(a,b) {
 
 const factorial = function(num) {
 	 if (num <=1 ) return 1;
-  //add integer to all integers smaller than it down to 1
+  
   let result = 1;
-  for (let i = 1; i <= num; i++) { //fails num = 5, gave 15, expected 120
+  for (let i = 1; i <= num; i++) { 
     result *= i;
   }
   return result;

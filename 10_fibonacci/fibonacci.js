@@ -3,7 +3,7 @@ const fibonacci = function(num) {
   let prev = 0; //F1
   let curr = 1;//F2
   let result;                                        ;
-  for (let i = 2; i < num; i++) { 
+  for (let i = 1; i < num; i++) { 
     result = prev + curr;
     prev = curr;
     curr = result;
